@@ -3,7 +3,7 @@ import {makeAutoObservable} from 'mobx'
 // We use constructor when we make object of class
 export default class UserStore {
     constructor() {
-        this._isAuth = true
+        this._isAuth = false
         this._user = {}
         // func from mobx which follow the changes of variables (this.) and rerender them
         makeAutoObservable(this)
